@@ -29,6 +29,11 @@ public class Transfer {
   *
   */
 
+  ArrayList<Food> foodList = new ArrayList<Food>();
+  ArrayList<Parts> partsList = new ArrayList<Parts>();
+  ArrayList<Supplies> suppliesList = new ArrayList<Supplies>();
+
+
   public Transfer() {
 
     /*  
@@ -40,6 +45,21 @@ public class Transfer {
     *   You can use a for-loop to transfer all our items, or import
     *   java.util.Arrays and use the Arrays.asList() method
     */
+
+    for (int i = 0; i < foodArray.length; i++) {
+
+      foodList.add(foodArray[i]);
+    }
+
+    for (int i = 0; i < partsArray.length; i++) {
+
+      partsList.add(partsArray[i]);
+    }
+    
+    for (int i = 0; i < suppliesArray.length; i++) {
+
+      suppliesList.add(suppliesArray[i]);
+    }
 
   }
 
@@ -240,13 +260,9 @@ public class Transfer {
   // Will print our lists in a table once we have created them
   public void printLists() {
 
-    
     // Erase the below print message once ArrayLists have been made
     System.out.println("\nLists do not exist yet to print!!");
-    /* Once you have created your three lists in Step 1, erase this comment
     
-
-
     if(foodList.isEmpty() && partsList.isEmpty() && suppliesList.isEmpty()) {
       System.out.printf("\n%19s", "No objects found in lists.");
     } 
@@ -286,8 +302,5 @@ public class Transfer {
         System.out.printf("\n%-25.25s %-15.15s %-10.10s", tempSupplies.getName(), "" + tempSupplies.getQuantity(), "");
       }
     }
-
-
-    Once you have created your lists, erase this comment */
   }
 }
