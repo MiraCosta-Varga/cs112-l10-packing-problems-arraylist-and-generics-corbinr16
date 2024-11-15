@@ -210,8 +210,6 @@ public class Transfer {
     }
   }
 
-
-
   /*  Once you have finished the above method, go to our Inventory
   *   class and follow the instructions for STEP 8.
   *
@@ -222,7 +220,7 @@ public class Transfer {
 
   public void editQuantity(int listNumber) {
       
-    /*    STEP 9
+    /*    STEP 8
     *
     *     Use our generic objects to access the generic method 
     *     checkQty() we wrote in Inventory in STEP 8. Make sure 
@@ -241,7 +239,7 @@ public class Transfer {
       /* This is where you will use our generic method checkQty()
       *  for our foodList.
       */
-      System.out.println("Edit Quantity for foodList not implemented yet.");
+      Food foodTemp = foodInventory.checkQty(foodList, name, desiredQty);
 
 
     } else if(listNumber == 2) { // Parts
@@ -249,7 +247,7 @@ public class Transfer {
       /* This is where you will use our generic method checkQty()
       *  for our partsList.
       */
-      System.out.println("Edit Quantity for partsList not implemented yet.");
+      Parts partsTemp = partsInventory.checkQty(partsList, name, desiredQty);
 
 
     } else if(listNumber == 3) { // Supplies
@@ -257,22 +255,10 @@ public class Transfer {
       /* This is where you will use our generic method checkQty()
       *  for our suppliesList.
       */
-      System.out.println("Edit Quantity for suppliesList not implemented yet.");
+      Supplies suppliesTemp = suppliesInventory.checkQty(suppliesList, name, desiredQty);
 
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
   // Will print our lists in a table once we have created them
   public void printLists() {
