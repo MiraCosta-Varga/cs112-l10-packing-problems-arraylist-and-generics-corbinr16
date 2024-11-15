@@ -1,4 +1,6 @@
-public class Inventory {
+import java.util.List;
+
+public class Inventory<T extends Supplies> {
 
 	/*     STEP 3 
 	*        
@@ -8,6 +10,37 @@ public class Inventory {
 	*
 	*      Go to Transfer.java for STEP 4
 	*/
+
+	private T t;
+
+	public Inventory() {
+
+
+	}
+
+	public Inventory(T t) {
+
+		this.t = t;
+	}
+
+	public void setObj(T t){
+
+		this.t = t;
+	}
+
+	public T getObj() {
+
+		return t;
+	}
+
+
+
+
+
+
+
+
+
 
 	/*     STEP 5
 	*
@@ -43,5 +76,4 @@ public class Inventory {
 	*      match the quantity in the list, then update using .setQuantity
 	*      and return the object with the new quantity.
 	*/
-
 }

@@ -162,6 +162,10 @@ public class Transfer {
   *            Food/Parts/Supplies
   */
 
+  Inventory<Food> foodInventory = new Inventory<Food>();
+  Inventory<Parts> partsInventory = new Inventory<Parts>();
+  Inventory<Supplies> suppliesInventory = new Inventory<Supplies>();
+
   public void removeItems(int listNumber) {
 
     /*    STEP 6
