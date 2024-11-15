@@ -184,7 +184,9 @@ public class Transfer {
       /* This is where you will use our generic method searchByName()
       *  and List method remove() for our foodList
       */ 
-      System.out.println("Remove items for foodList not implemented yet."); 
+      int indexOfItem = foodInventory.searchByName(foodList, name);
+      System.out.println("Removing " + name + " at indexOfItem");
+      foodList.remove(indexOfItem);
 
 
     } else if(listNumber == 2) { // Parts
@@ -192,15 +194,18 @@ public class Transfer {
       /* This is where you will use our generic method searchByName()
       *  and List method remove() for our partsList
       */  
-      System.out.println("Remove items for partsList not implemented yet."); 
-
+      int indexOfItem = partsInventory.searchByName(partsList, name);
+      System.out.println("Removing " + name + " at indexOfItem");
+      partsList.remove(indexOfItem);
 
     } else if(listNumber == 3) { // Supplies
       
       /* This is where you will use our generic method searchByName()
       *  and List method remove() for our suppliesList
       */
-      System.out.println("Remove items for suppliesList not implemented yet.");
+      int indexOfItem = suppliesInventory.searchByName(suppliesList, name);
+      System.out.println("Removing " + name + " at indexOfItem");
+      suppliesList.remove(indexOfItem);
 
     }
   }
